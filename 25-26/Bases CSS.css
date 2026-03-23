@@ -1,0 +1,354 @@
+@font-face {
+    font-family: "Cleta";
+    src: url("fonts/cleta.regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: MintCream;
+}
+
+.bloc-titre {
+    background-image: url("Gallery/school.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 4px solid black;
+    margin: 0 auto 40px auto;
+    padding: 20px 20px 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+h1.Titres {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(1rem, 9vw, 6rem);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: clamp(0.02em, 0.25vw, 0.08em);
+    -webkit-text-stroke: 1px #5a2a00;
+    padding: 20px 16px 10px 16px;
+    margin: 0 auto;
+    line-height: 0.95;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    padding: 12px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.bloc-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.bloc-presentation img {
+    width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.bloc-presentation p {
+    margin: 0;
+    max-width: 600px;
+    font-size: 1.3em;
+}
+
+/*FONTS*/
+.geo-regular {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.geo-regular-italic {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/*FONTS END*/
+
+/* =========================
+   MEDIA QUERIES / RESPONSIVE
+========================= */
+
+/* Écrans moyens */
+@media (max-width: 1100px) {
+  body {
+    padding: 20px;
+  }
+
+  h1.Titres {
+    font-size: 5.5em;
+    letter-spacing: 0.08em;
+    padding: 16px;
+    transform: scaleX(1.1);
+  }
+
+  .navbar {
+    gap: 14px;
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    font-size: 0.95em;
+  }
+
+  .bloc-presentation {
+    gap: 24px;
+  }
+
+  .bloc-presentation img {
+    width: 500px;
+  }
+
+  .bloc-presentation p {
+    max-width: 500px;
+    font-size: 1.15em;
+  }
+
+  .geo-regular {
+    font-size: 1.6em;
+  }
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .bloc-titre {
+    gap: 12px;
+  }
+
+  h1.Titres {
+    font-size: 3.2em;
+    letter-spacing: 0.05em;
+    padding: 14px;
+    transform: scaleX(1.05);
+    text-align: center;
+  }
+
+  .navbar {
+    align-self: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 12px 14px 12px;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    font-size: 0.95em;
+  }
+
+  .bloc-presentation {
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .bloc-presentation img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .bloc-presentation p {
+    max-width: 100%;
+    font-size: 1.1em;
+  }
+
+  .geo-regular {
+    font-size: 1.4em;
+  }
+}
+
+/* Téléphones */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .bloc-titre {
+    border-width: 2px;
+    gap: 8px;
+  }
+
+  h1.Titres {
+    font-size: 2.2em;
+    letter-spacing: 0.03em;
+    -webkit-text-stroke: 0.6px #5a2a00;
+    padding: 10px;
+    transform: none;
+    width: auto;
+  }
+
+  .navbar {
+    gap: 10px;
+    padding: 6px 10px 12px 10px;
+  }
+
+  .navbar a {
+    font-size: 0.9em;
+  }
+
+  .bloc-presentation {
+    gap: 16px;
+    margin: 20px auto;
+  }
+
+  .bloc-presentation img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .bloc-presentation p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .geo-regular {
+    font-size: 1.2em;
+  }
+}
